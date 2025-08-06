@@ -1,7 +1,7 @@
 Here's a clean and structured **README.md** for your full-stack Notes & Bookmarks project:
 
 ---
-
+## Demo Video :- <a>https://drive.google.com/file/d/1Kmi1ESoU1XQbTH91hAkimRmM5jqC3TIE/view?usp=drive_link</a>
 ```markdown
 # 📝 Notes & Bookmarks Web App
 
@@ -12,6 +12,7 @@ A full-stack MERN application that allows users to **create**, **update**, and *
 ## 🔧 Tech Stack
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB + Mongoose
@@ -19,6 +20,7 @@ A full-stack MERN application that allows users to **create**, **update**, and *
 - Clean architecture (Controller, Service, Repository layers)
 
 ### Frontend
+
 - React.js
 - React Router
 - Context API (for Auth)
@@ -27,12 +29,12 @@ A full-stack MERN application that allows users to **create**, **update**, and *
 
 ---
 
-## 📁 Folder Structure
-
 ```
+## 📁 Folder Structure
+<pre lang="markdown">
 
 backend/
-├── config/
+├── config/ 
 ├── controller/
 ├── middleware/
 ├── model/
@@ -54,7 +56,11 @@ frontend/
 ├── App.jsx
 └── main.jsx
 
+</pre>
+
 ````
+
+
 
 ---
 
@@ -117,30 +123,30 @@ npm run dev
 
 ## 🔍 API Endpoints (short list)
 
-* `POST /api/auth/register`
-* `POST /api/auth/login`
-* `GET /api/auth/profile`
-* `POST /api/note/`
-* `GET /api/note/`
-* `POST /api/bookmark/`
-* `GET /api/bookmark/`
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+- `GET /api/auth/profile`
+- `POST /api/note/`
+- `GET /api/note/`
+- `POST /api/bookmark/`
+- `GET /api/bookmark/`
 
 ---
 
 ## 📌 Note
 
-* MongoDB must be running (can use Docker or local installation)
-* Cookies are used for storing JWT securely
-* Use `.env` file for configuration
+- MongoDB must be running (can use Docker or local installation)
+- Cookies are used for storing JWT securely
+- Use `.env` file for configuration
 
 ---
 
 ## 💡 Future Improvements
 
-* Add user profile settings
-* Tag management system
-* Dark mode UI
-* Search functionality
+- Add user profile settings
+- Tag management system
+- Dark mode UI
+- Search functionality
 
 ---
 

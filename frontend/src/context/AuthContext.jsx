@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import axios from "axios";
-import { getProfile } from "../api/auth";
+import { getProfile, logout as logOutAPI } from "../api/auth";
+import toast from "react-hot-toast";
 
 const AuthContext = createContext();
 
@@ -24,7 +24,19 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = (userData) => setUser(userData);
-  const logout = () => setUser(null);
+  const logout = async () => {
+    try {
+      const res = await logOutAPI();
+      console.log("Logout successful:", res);
+      if (res.success) {
+        setUser(null);
+        toast.success("Logout successful!");
+      }
+      setUser(null);
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
   return (
     <AuthContext.Provider value={{ user, login, logout, loading }}>

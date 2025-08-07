@@ -1,6 +1,4 @@
-import NoteRepository from "../repository/noteRepository.js";
-
-export default class NoteService {
+export default class noteService {
   constructor(noteRepository) {
     this.repo = noteRepository;
   }

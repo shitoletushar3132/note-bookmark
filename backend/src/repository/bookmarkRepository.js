@@ -1,4 +1,4 @@
-import Bookmark from '../model/bookmark.js';
+import Bookmark from '../model/Bookmark.js';
 
 export default class BookmarkRepository {
     async create(bookmarkData) {

@@ -2,7 +2,7 @@
 import express from "express";
 import AuthMiddleware from "../middleware/authMiddleware.js";
 import NoteController from "../controller/noteController.js";
-import NoteService from "../services/NoteService.js";
+import NoteService from "../services/noteService.js";
 import NoteRepository from "../repository/noteRepository.js";
 import UserRepository from "../repository/userRepository.js";
 
